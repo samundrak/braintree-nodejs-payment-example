@@ -1,0 +1,8 @@
+extends layout
+
+block content
+	form(id="checkout" method="post" action="/checkout")
+		#payment-form
+		input(type="number" name="amount" placeholder="Enter amount")
+		br
+		input(type="submit" value="PAY")
